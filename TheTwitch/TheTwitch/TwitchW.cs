@@ -62,7 +62,7 @@ namespace TheTwitch
         }
         public override void Harass(Obj_AI_Hero target)
         {
-            if (((target.GetBuffCountFixed("twitchdeadlyvenom") >= HarassAfterStacks || HarassAfterStacks == 0) && _afterAttack & !Orbwalking.InAutoAttackRange(target)) && (!NotDuringR || !ObjectManager.Player.HasBuff("TwitchFullAutomatic")))
+            if (((target.GetBuffCountFixed("twitchdeadlyvenom") >= HarassAfterStacks || HarassAfterStacks == 0) && _afterAttack) && (!NotDuringR || !ObjectManager.Player.HasBuff("TwitchFullAutomatic")))
                 Cast(target, aoe: IsAreaOfEffect);
         }
 
