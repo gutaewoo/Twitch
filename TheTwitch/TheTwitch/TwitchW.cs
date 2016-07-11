@@ -79,10 +79,7 @@ namespace TheTwitch
                 Cast(location.Position);
         }
 
-        public override void Gapcloser(ComboProvider combo, ActiveGapcloser gapcloser)
-        {
-            Cast(gapcloser.Sender, true);
-        }
+
 
         public override int GetPriority()
         {
